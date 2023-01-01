@@ -1,0 +1,106 @@
+[
+    {
+        "depto": "ANTIOQUIA",
+        "total": 399
+    },
+    {
+        "depto": "ATLÁNTICO",
+        "total": 59
+    },
+    {
+        "depto": "BOGOTÁ, D. C.",
+        "total": 334
+    },
+    {
+        "depto": "BOLÍVAR",
+        "total": 13
+    },
+    {
+        "depto": "BOYACÁ",
+        "total": 13
+    },
+    {
+        "depto": "CALDAS",
+        "total": 60
+    },
+    {
+        "depto": "CAQUETÁ",
+        "total": 1
+    },
+    {
+        "depto": "CAUCA",
+        "total": 9
+    },
+    {
+        "depto": "CESAR",
+        "total": 1
+    },
+    {
+        "depto": "CÓRDOBA",
+        "total": 5
+    },
+    {
+        "depto": "CUNDINAMARCA",
+        "total": 23
+    },
+    {
+        "depto": "HUILA",
+        "total": 13
+    },
+    {
+        "depto": "LA GUAJIRA",
+        "total": 1
+    },
+    {
+        "depto": "MAGDALENA",
+        "total": 5
+    },
+    {
+        "depto": "META",
+        "total": 5
+    },
+    {
+        "depto": "NARIÑO",
+        "total": 8
+    },
+    {
+        "depto": "NORTE DE SANTANDER",
+        "total": 20
+    },
+    {
+        "depto": "QUINDÍO",
+        "total": 20
+    },
+    {
+        "depto": "RISARALDA",
+        "total": 38
+    },
+    {
+        "depto": "SANTANDER",
+        "total": 28
+    },
+    {
+        "depto": "SUCRE",
+        "total": 4
+    },
+    {
+        "depto": "TOLIMA",
+        "total": 20
+    },
+    {
+        "depto": "VALLE DEL CAUCA",
+        "total": 116
+    },
+    {
+        "depto": "ARAUCA",
+        "total": 12
+    },
+    {
+        "depto": "CASANARE",
+        "total": 12
+    },
+    {
+        "depto": "ARCHIPIÉLAGO DE SAN ANDRÉS, PROVIDENCIA Y SANTA CATALINA",
+        "total": 1
+    }
+]
