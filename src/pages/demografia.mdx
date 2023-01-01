@@ -5,7 +5,6 @@ layout: ../layouts/MainLayout.astro
 ---
 
 import { countryOrigin } from "../utils/Data";
-// import PieChart from "../components/charts/PieChart";
 import ColombiaMap from "../components/ColombiaMap";
 
 ### Años de experiencia
@@ -14,8 +13,6 @@ import ColombiaMap from "../components/ColombiaMap";
 
 En cuál de los siguientes lenguajes de programación ocupa la mayor parte de su tiempo laboralll
 
-<div className="w-80">
-  <PieChart client:only="react" data={countryOrigin} />
-</div>
 ## Mapa
+
 <ColombiaMap client:only="react" />
