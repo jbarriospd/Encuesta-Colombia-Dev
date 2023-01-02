@@ -63,16 +63,17 @@ const ColombiaMap = () => {
 
     return (
         <>
-            <div className='flex justify-center'>
+            <div>
                 <svg width={400} height={500} viewBox="0 0 400 500">
-                    <g className='ESP_adm1' id="toolitpMap" data-tooltip-variant="light">
+                    <g className='COL_adm1' id="toolitpMap" data-tooltip-variant="light">
                         {geoFile.map((d, i) => {
                             const hasTotal = d.properties.total ? true : false
-                            const fillColor = hasTotal === true ? 'fill-cyan-200' : 'fill-cyan-900'
+                            const fillColor = hasTotal === true ? 'fill-yellow-900' : 'fill-yellow-700'
+                            const isIslands = i === 32 ? 'transform scale-200 stroke-current' : 'stroke-white'
 
                             return (
                                 <path
-                                    className={`${fillColor} stroke-white`}
+                                    className={`${fillColor} ${isIslands}`}
                                     d={geoPath().projection(projection())(d)}
                                     key={`path-${i} `}
                                     onMouseEnter={() => setContent(tooltipText(d.properties))}

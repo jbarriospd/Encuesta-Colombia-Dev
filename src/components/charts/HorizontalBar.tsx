@@ -23,7 +23,12 @@ ChartJS.register(
 export const HorizontalBar = (props: any) => {
     const { data } = props;
 
-    const options = { indexAxis: 'y' as const }
+    const options = {
+        indexAxis: 'y' as const,
+        plugins: {
+            legend: { display: false },
+        }
+    }
 
     return (
         <div>

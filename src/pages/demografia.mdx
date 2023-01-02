@@ -4,15 +4,19 @@ description: Perfiles demograficos
 layout: ../layouts/MainLayout.astro
 ---
 
-import { countryOrigin } from "../utils/Data";
 import ColombiaMap from "../components/ColombiaMap";
+import PieChart from "../components/charts/PieChart";
 
-### Años de experiencia
+import { countryOrigin } from "../utils/Data";
 
-### Tecnologias
+## Geografía
 
-En cuál de los siguientes lenguajes de programación ocupa la mayor parte de su tiempo laboralll
+<div class="flex">
+  <ColombiaMap client:only="react" />
+  <PieChart client:load="react" data={countryOrigin} />
+</div>
 
-## Mapa
-
-<ColombiaMap client:only="react" />
+<div class="flex justify-between">
+    <p>Fig 1.¿En qué ciudad/departamento/región de Colombia vive?</p>
+    <p>Fig 2.País de procedencia</p>
+</div>

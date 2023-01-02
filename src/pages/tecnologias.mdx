@@ -4,9 +4,12 @@ description: Lenhuages y tencologias en Colombia
 layout: ../layouts/MainLayout.astro
 ---
 
-import VerticalBarChart from "../components/charts/VerticalBarChart";
+import HorizontalBar from "../components/charts/HorizontalBar";
 import StackedBarChart from "../components/charts/StackedBarChart";
+import { tecnologiesInWork, frontendTecnologies } from "../utils/Data";
 
-import { frontendTecnologies, minorities, sizeCompany } from "../utils/Data";
+## Tecnologias para el trabajo
+<HorizontalBar client:load="react" data={tecnologiesInWork} />
 
-### El titulo de
+## Tecnologias Frontend
+<HorizontalBar client:load="react" data={frontendTecnologies} />

@@ -312,18 +312,13 @@ export const tecnologiesInWork = {
     "Dart",
     "Scala",
     "R",
-    "Shell",
-    "ABAP",
-    "Elixir",
-    "C++",
-    "Clojure",
+    
   ],
   datasets: [
     {
       label: "Respuestas",
       data: [
-        478, 169, 153, 126, 101, 94, 43, 32, 31, 28, 17, 16, 15, 6, 4, 4, 3, 3,
-        2, 2,
+        478, 169, 153, 126, 101, 94, 43, 32, 31, 28, 17, 16, 15, 6,4
       ],
       backgroundColor: "rgba(255, 99, 132, 0.2)",
       borderColor: "rgba(255, 99, 132, 1)",

@@ -23,6 +23,7 @@ export const VerticalBarChart = ({ data }: any) => {
 
     const options = {
         plugins: {
+            legend: { display: false },
             tooltip: {
                 callbacks: {
                     title: (context) => {
@@ -31,9 +32,6 @@ export const VerticalBarChart = ({ data }: any) => {
                 }
             }
         },
-        scales: {
-            y: { beginAtZero: true }
-        }
     }
 
     return (
