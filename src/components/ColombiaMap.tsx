@@ -17,7 +17,7 @@ const ColombiaMap = () => {
     const [geoFile, setGeoFile] = useState([])
     const [content, setContent] = useState('')
     const hasMounted = useHasMounted()
-
+    
     useEffect(() => {
 
         fetch(
@@ -53,19 +53,18 @@ const ColombiaMap = () => {
         if (typeof total !== 'undefined') {
             return (
                 <div>
-                    <p>{depto}</p>
-                    <p>{total}</p>
+                    <p className='text-white'>{depto}</p>
+                    <p className='text-white'>{total}</p>
                 </div>
             )
         }
         return false
     }
-
     return (
         <>
             <div>
                 <svg width={400} height={500} viewBox="0 0 400 500">
-                    <g className='COL_adm1' id="toolitpMap" data-tooltip-variant="light">
+                    <g className='COL_adm1' id="toolitpMap">
                         {geoFile.map((d, i) => {
                             const hasTotal = d.properties.total ? true : false
                             const fillColor = hasTotal === true ? 'fill-yellow-900' : 'fill-yellow-700'
@@ -75,7 +74,7 @@ const ColombiaMap = () => {
                                 <path
                                     className={`${fillColor} ${isIslands}`}
                                     d={geoPath().projection(projection())(d)}
-                                    key={`path-${i} `}
+                                    key={`path-${i}`}
                                     onMouseEnter={() => setContent(tooltipText(d.properties))}
                                     onMouseLeave={() => setContent('')}
                                     strokeWidth={0.5}

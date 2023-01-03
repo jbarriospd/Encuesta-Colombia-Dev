@@ -15,5 +15,5 @@ export default defineConfig({
   preact(),
   // Enable React for the Algolia search component.
   react(), tailwind(), mdx()],
-  site: `http://astro.build`
+  site: `https://encuesta-colombia-dev.vercel.app`
 });
