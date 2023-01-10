@@ -30,13 +30,24 @@ export const VerticalBarChart = ({ data }: any) => {
                         return context[0].label.replaceAll(',', ' ')
                     }
                 }
-            }
+            },/* 
+            scale: {
+                ticks: {
+                  backdropColor: 'rgba(122,156,23,1)'
+                }
+            }, */
         },
+        scales: {
+            y: {
+              backdropColor: 'rgba(122,156,23,1)'
+            }
+          }
+        
     }
 
     return (
-        <div className='mt-5'>
-            <Bar data={data} options={options} />
+        <div >
+            <Bar data={data} options={options} className='mt-5 text-yellow-600'/>
         </div>
     );
 };

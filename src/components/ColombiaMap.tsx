@@ -52,7 +52,7 @@ const ColombiaMap = () => {
 
         if (typeof total !== 'undefined') {
             return (
-                <div className='w-20'>
+                <div className="w-24">
                     <p className='text-white text-xs'>{depto}</p>
                     <p className='text-white'>{total}</p>
                 </div>

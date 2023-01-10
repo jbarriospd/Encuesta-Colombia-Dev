@@ -27,7 +27,21 @@ export const HorizontalBar = (props: any) => {
         indexAxis: 'y' as const,
         plugins: {
             legend: { display: false },
-        }
+            
+           
+        },
+        scale: {
+            ticks: {
+              backdropColor: 'rgba(122,156,23,1)'
+            }
+        },
+       /*  scales: {
+            x: {
+                ticks: {
+                    backdropColor: 'rgb(0,0,240)'
+                }
+            },
+        }, */
     }
 
     return (
