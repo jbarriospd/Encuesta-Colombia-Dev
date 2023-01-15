@@ -4,7 +4,7 @@ description: Perfiles demograficos
 layout: ../layouts/MainLayout.astro
 ---
 
-// import ColombiaMap from "../components/ColombiaMap";
+import ColombiaMap from "../components/ColombiaMap";
 import PieChart from "../components/charts/PieChart";
 
 import { countryOrigin } from "../utils/Data";
@@ -13,7 +13,7 @@ import { countryOrigin } from "../utils/Data";
 
 <div class="md:flex">
   <div>
-    {/* <ColombiaMap client:only="react" /> */}
+    <ColombiaMap client:only="react" />
     <p>Fig 1.¿En qué ciudad/departamento/región de Colombia vive?</p>
   </div>
   <div class="self-center">
