@@ -143,6 +143,9 @@ export const typeCompany = {
     {
       label: "respuestas",
       data: [690, 358, 235, 234, 190, 52, 25],
+      backgroundColor: ["rgba(255, 99, 132)"],
+      borderColor: ["rgba(255, 255, 255)"],
+      borderWidth: 2,
     },
   ],
 };

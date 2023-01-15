@@ -9,4 +9,4 @@ años de exp vs salario
 
 educacion vs genero
 
-salario anual vs gender vs country vs estudios vs exp
+salario anual vs gender vs country vs estudios vs expsdsd

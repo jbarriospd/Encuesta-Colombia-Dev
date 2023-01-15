@@ -9,7 +9,9 @@ import StackedBarChart from "../components/charts/StackedBarChart";
 import { tecnologiesInWork, frontendTecnologies } from "../utils/Data";
 
 ## Tecnologias para el trabajo
-<HorizontalBar client:load="react" data={tecnologiesInWork} />
+
+  <HorizontalBar client:load="react" data={tecnologiesInWork} />
+
 
 <Tabs client:visible sharedStore="ui-frameworks">
   <Fragment slot="tab.frontend">frontend</Fragment>
