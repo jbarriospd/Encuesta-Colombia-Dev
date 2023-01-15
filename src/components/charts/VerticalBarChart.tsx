@@ -9,6 +9,7 @@ import {
     Legend
 
 } from 'chart.js';
+ChartJS.defaults.color = "#cbcbcb";
 
 ChartJS.register(
     CategoryScale,

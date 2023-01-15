@@ -1,6 +1,6 @@
 export const SITE = {
-	title: 'Salario dev Colombia',
-	description: 'Encuesta de salario 2021.',
+	title: 'Encuesta Colombia Dev',
+	description: 'Encuesta de Colombia Dev',
 	defaultLanguage: 'es_ES',
 };
 

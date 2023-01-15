@@ -23,7 +23,7 @@ const currentPageMatch = currentPage.endsWith("/")
 								const url = Astro.site?.pathname + child.link;
 								return (
 									<li class="nav-link">
-										<a
+										<a class="aria-[current='page']:bg-slate-600 aria-[current='page']:font-semibold"
 											href={url}
 											aria-current={
 												currentPageMatch === child.link
@@ -103,11 +103,11 @@ const currentPageMatch = currentPage.endsWith("/")
 		background-color: var(--theme-bg-hover);
 	}
 
-	.nav-link a[aria-current="page"] {
+	/* .nav-link a[aria-current="page"] {
 		color: var(--theme-text-accent);
 		background-color: var(--theme-bg-accent);
 		font-weight: 600;
-	}
+	} */
 
 	@media (min-width: 50em) {
 		.nav-groups {

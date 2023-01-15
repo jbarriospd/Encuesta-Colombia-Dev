@@ -10,6 +10,8 @@ import {
 
 } from 'chart.js';
 
+ChartJS.defaults.color = "#cbcbcb";
+
 ChartJS.register(
     CategoryScale,
     LinearScale,
