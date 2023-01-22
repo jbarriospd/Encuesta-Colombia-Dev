@@ -11,13 +11,13 @@ import { countryOrigin } from "../utils/Data";
 
 ## Geografía
 
-<div class="md:flex">
+<div class="md:flex align-items-center">
   <div>
     <ColombiaMap client:only="react" />
-    <p>Fig 1.¿En qué ciudad/departamento/región de Colombia vive?</p>
+    <p  class="text-center">¿En qué ciudad/departamento/región de Colombia vive?</p>
   </div>
   <div class="self-center">
     <PieChart client:load="react" data={countryOrigin} />
-    <p>Fig 2.País de procedencia</p>
+    <p class="text-center">País de procedencia</p>
   </div>
 </div>

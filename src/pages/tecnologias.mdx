@@ -6,19 +6,30 @@ layout: ../layouts/MainLayout.astro
 import Tabs from "../components/Tabs";
 import HorizontalBar from "../components/charts/HorizontalBar";
 import StackedBarChart from "../components/charts/StackedBarChart";
-import { tecnologiesInWork, frontendTecnologies } from "../utils/Data";
+
+import { 
+  tecnologiesInWork, 
+  frontendTecnologies, 
+  backendTecnologies,
+  dbTecnologiesInWork 
+  } from "../utils/Data";
 
 ## Tecnologias para el trabajo
 
   <HorizontalBar client:load="react" data={tecnologiesInWork} />
-
 
 <Tabs client:visible sharedStore="ui-frameworks">
   <Fragment slot="tab.frontend">frontend</Fragment>
   <Fragment slot="tab.backend">backend</Fragment>
   <Fragment slot="tab.db">db</Fragment>
 
-	<Fragment slot="panel.frontend"><slot name="frontend" />11</Fragment>
-	<Fragment slot="panel.backend"><slot name="backend" />22</Fragment>
-	<Fragment slot="panel.db"><slot name="db" />33</Fragment>
+	<Fragment slot="panel.frontend"><slot name="frontend" />
+    <HorizontalBar client:load="react" data={frontendTecnologies} />
+  </Fragment>
+	<Fragment slot="panel.backend"><slot name="backend" />
+    <HorizontalBar client:load="react" data={backendTecnologies} />
+  </Fragment>
+	<Fragment slot="panel.db"><slot name="db" />
+    <HorizontalBar client:load="react" data={dbTecnologiesInWork} />
+  </Fragment>
 </Tabs>

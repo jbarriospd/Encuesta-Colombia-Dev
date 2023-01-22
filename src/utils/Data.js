@@ -12,6 +12,15 @@ export const typeOfContract = {
     "Contrato a termino fijo con empresa temporal",
   ],
   datasets: [882, 165, 154, 106, 23, 16, 7, 1],
+  backgroundColor: [
+    "rgb(255, 159, 64)",
+  ],
+  borderColor: [
+    "rgba(255, 255, 255)"
+  ],
+  borderWidth: 1.5,
+
+
 };
 
 export const modeOfWork = {
@@ -119,6 +128,11 @@ export const objectCompany = {
     {
       label: "respuestas",
       data: [934, 277, 240, 230, 103],
+      backgroundColor: [
+        "rgb(75, 192, 192)"
+      ],
+      borderColor: "rgba(255, 255, 255)",
+      borderColor: 1.5
     },
   ],
 };
@@ -143,9 +157,11 @@ export const typeCompany = {
     {
       label: "respuestas",
       data: [690, 358, 235, 234, 190, 52, 25],
-      backgroundColor: ["rgba(255, 99, 132)"],
+      backgroundColor: [
+        "rgb(75, 192, 192)"
+      ],
       borderColor: ["rgba(255, 255, 255)"],
-      borderWidth: 2,
+      borderWidth: 1.5,
     },
   ],
 };
@@ -163,6 +179,9 @@ export const fundCompany = {
     {
       label: "respuestas",
       data: [28, 56, 397, 376, 910, 17],
+      backgroundColor: "rgb(75, 192, 192)",
+      borderColor: "rgba(255, 255, 255)",
+      borderWidth: 1.5,
     },
   ],
 };
@@ -195,6 +214,11 @@ export const rolDeveloperAct = {
       data: [
         228, 226, 223, 195, 90, 78, 51, 49, 40, 37, 36, 35, 28, 25, 11, 3, 3, 1,
       ],
+      backgroundColor: [
+        "rgb(75, 192, 192)"
+      ],
+      borderColor: "rgba(255, 255, 255)",
+      borderWidth: 1.5,
     },
   ],
 };
@@ -225,6 +249,11 @@ export const rolDeveloperBefore = {
         223, 203, 169, 161, 148, 83, 56, 54, 54, 42, 27, 23, 21, 19, 11, 11, 7,
         6,
       ],
+      backgroundColor: [
+        "rgb(75, 192, 192)"
+      ],
+      borderColor: "rgba(255, 255, 255)",
+      borderWidth: 1.5,
     },
   ],
 };
@@ -315,7 +344,6 @@ export const tecnologiesInWork = {
     "Dart",
     "Scala",
     "R",
-    
   ],
   datasets: [
     {
@@ -323,9 +351,26 @@ export const tecnologiesInWork = {
       data: [
         478, 169, 153, 126, 101, 94, 43, 32, 31, 28, 17, 16, 15, 6,4
       ],
-      backgroundColor: "rgba(255, 99, 132, 0.2)",
-      borderColor: "rgba(255, 99, 132, 1)",
-      borderWidth: 1,
+      backgroundColor: [
+        "rgba(255, 99, 132)",
+        "rgba(54, 162, 235)",
+        "rgba(255, 206, 86)",
+        "rgba(75, 192, 192)",
+        "rgba(153, 102, 255)",
+        "rgba(255, 159, 64)",
+        "rgba(255, 99, 132)",
+        "rgba(54, 162, 235)",
+        "rgba(255, 206, 86)",
+        "rgba(75, 192, 192)",
+        "rgba(153, 102, 255)",
+        "rgba(255, 159, 64)",
+        "rgba(255, 99, 132)",
+        "rgba(54, 162, 235)",
+        "rgba(255, 206, 86)",
+
+      ],
+      borderColor: "rgba(255, 255, 255, 1)",
+      borderWidth: 1.5,
     },
   ],
 };
@@ -372,23 +417,12 @@ export const frontendTecnologies = {
     "VanillaJS",
     "Next.js",
     "Flutter",
-    "Ninguna, no hago frontend",
   ],
   datasets: [
     {
       label: "Respuestas",
-      data: [422, 208, 96, 80, 46, 33, 9, 396],
+      data: [422, 208, 96, 80, 46, 33, 9],
       backgroundColor: [
-        "rgba(255, 99, 132, 0.2)",
-        "rgba(255, 159, 64, 0.2)",
-        "rgba(255, 205, 86, 0.2)",
-        "rgba(75, 192, 192, 0.2)",
-        "rgba(54, 162, 235, 0.2)",
-        "rgba(153, 102, 255, 0.2)",
-        "rgba(201, 203, 207, 0.2)",
-        "rgba(23, 193, 215,0.2)",
-      ],
-      borderColor: [
         "rgb(255, 99, 132)",
         "rgb(255, 159, 64)",
         "rgb(255, 205, 86)",
@@ -397,8 +431,12 @@ export const frontendTecnologies = {
         "rgb(153, 102, 255)",
         "rgb(201, 203, 207)",
         "rgb(23, 193, 215)",
+  
       ],
-      borderWidth: 1,
+      borderColor: [
+        "rgb(255, 255, 255)",
+      ],
+      borderWidth: 1.5,
     },
   ],
 };
@@ -425,16 +463,6 @@ export const backendTecnologies = {
       label: "Respuestas",
       data: [206, 169, 115, 93, 82, 62, 58, 22, 14, 14, 12, 9, 7, 6],
       backgroundColor: [
-        "rgba(255, 99, 132, 0.2)",
-        "rgba(255, 159, 64, 0.2)",
-        "rgba(255, 205, 86, 0.2)",
-        "rgba(75, 192, 192, 0.2)",
-        "rgba(54, 162, 235, 0.2)",
-        "rgba(153, 102, 255, 0.2)",
-        "rgba(201, 203, 207, 0.2)",
-        "rgba(23, 193, 215,0.2)",
-      ],
-      borderColor: [
         "rgb(255, 99, 132)",
         "rgb(255, 159, 64)",
         "rgb(255, 205, 86)",
@@ -443,8 +471,17 @@ export const backendTecnologies = {
         "rgb(153, 102, 255)",
         "rgb(201, 203, 207)",
         "rgb(23, 193, 215)",
+        "rgb(255, 99, 132)",
+        "rgb(255, 159, 64)",
+        "rgb(255, 205, 86)",
+        "rgb(75, 192, 192)",
+        "rgb(54, 162, 235)",
+        "rgb(153, 102, 255)",
       ],
-      borderWidth: 1,
+      borderColor: [
+        "rgb(255, 255, 255)",
+      ],
+      borderWidth: 1.5,
     },
   ],
 };
@@ -466,22 +503,12 @@ export const dbTecnologiesInWork = {
     "Cassandra",
     "Cosmosdb",
     "Couchbase",
-    "Ninguna, no hago nada de base de datos / persistencia.",
   ],
   datasets: [
     {
       label: "My First Dataset",
-      data: [372, 277, 143, 94, 76, 43, 41, 20, 10, 6, 5, 4, 3, 3, 3, 227],
+      data: [372, 277, 143, 94, 76, 43, 41, 20, 10, 6, 5, 4, 3, 3, 3],
       backgroundColor: [
-        "rgba(255, 99, 132, 0.2)",
-        "rgba(255, 159, 64, 0.2)",
-        "rgba(255, 205, 86, 0.2)",
-        "rgba(75, 192, 192, 0.2)",
-        "rgba(54, 162, 235, 0.2)",
-        "rgba(153, 102, 255, 0.2)",
-        "rgba(201, 203, 207, 0.2)",
-      ],
-      borderColor: [
         "rgb(255, 99, 132)",
         "rgb(255, 159, 64)",
         "rgb(255, 205, 86)",
@@ -489,6 +516,18 @@ export const dbTecnologiesInWork = {
         "rgb(54, 162, 235)",
         "rgb(153, 102, 255)",
         "rgb(201, 203, 207)",
+        "rgb(23, 193, 215)",
+        "rgb(255, 99, 132)",
+        "rgb(255, 159, 64)",
+        "rgb(255, 205, 86)",
+        "rgb(75, 192, 192)",
+        "rgb(54, 162, 235)",
+        "rgb(153, 102, 255)",
+        "rgb(201, 203, 207)",
+        "rgb(23, 193, 215)",
+      ],
+      borderColor: [
+        "rgb(255, 255, 255)",
       ],
       borderWidth: 1,
     },
@@ -555,29 +594,18 @@ export const countryOrigin = {
       label: "Respuestas",
       data: [1142, 51, 3, 2, 2, 1, 1, 1, 1],
       backgroundColor: [
-        "rgba(255, 99, 132, 0.2)",
-        "rgba(54, 162, 235, 0.2)",
-        "rgba(255, 206, 86, 0.2)",
-        "rgba(75, 192, 192, 0.2)",
-        "rgba(153, 102, 255, 0.2)",
-        "rgba(45, 159, 64, 0.2)",
-        "rgba(23, 78, 64, 0.2)",
-        "rgba(234, 90, 64, 0.2)",
-        "rgba(45, 150, 64, 0.2)",
+        "rgba(54, 162, 235)",
+        "rgba(255, 99, 132)",
+        "rgba(255, 206, 86)",
+        "rgba(75, 192, 192)",
+        "rgba(153, 102, 255)",
+        "rgba(255, 159, 64)",
+        "rgba(45, 159, 64)",
+        "rgba(23, 78, 64)",
+        "rgba(234, 90, 64)",
       ],
-      borderColor: [
-        "rgba(255, 99, 132, 1)",
-        "rgba(54, 162, 235, 1)",
-        "rgba(255, 206, 86, 1)",
-        "rgba(75, 192, 192, 1)",
-        "rgba(153, 102, 255, 1)",
-        "rgba(255, 159, 64, 1)",
-        "rgba(45, 159, 64, 0.2)",
-        "rgba(23, 78, 64, 0.2)",
-        "rgba(234, 90, 64, 0.2)",
-        "rgba(45, 160, 64, 0.2)",
-      ],
-      borderWidth: 1,
+      borderColor: "rgba(255, 255, 255)",
+      borderWidth: 1.5,
     },
   ],
 };
