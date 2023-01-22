@@ -56,7 +56,6 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
 
 			#grid-left {
 				position: fixed;
-				background-color: var(--theme-bg);
 				z-index: 10;
 				display: none;
 			}
@@ -67,10 +66,6 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
 				display: flex;
 				flex-direction: column;
 				height: 100%;
-			}
-
-			#grid-right {
-				display: none;
 			}
 
 			@media (min-width: 50em) {
@@ -96,10 +91,7 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
 					margin: 0 auto;
 				}
 
-				#grid-right {
-					grid-column: 3;
-					display: flex;
-				}
+
 			}
 		</style>
 		<style is:global>
@@ -122,7 +114,7 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
 	<body class="bg-sky-900">
 		<Header currentPage={currentPage} />
 		<main class="layout">
-			<aside id="grid-left" class="grid-sidebar text-white" title="Site Navigation">
+			<aside id="grid-left" class="grid-sidebar fixed bg-sky-900 z-10 text-white" title="Site Navigation">
 				<LeftSidebar currentPage={currentPage} />
 			</aside>
 			<div id="grid-main" class="text-white">
@@ -130,7 +122,7 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
 					<slot />
 				</PageContent>
 			</div>
-			<aside id="grid-right sticky top-0 h-screen" class="text-white" class="grid-sidebar" title="Table of Contents">
+			<aside id="grid-right" class="sticky top-0 h-screen hidden lg:block lg:grid-cols-3 text-white" title="Table of Contents">
 				<RightSidebar headings={headings} githubEditUrl={githubEditUrl} />
 			</aside>
 		</main>
