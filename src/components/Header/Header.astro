@@ -1,8 +1,12 @@
 ---
-import * as CONFIG from "../../config";
-import AstroLogo from "./AstroLogo.astro";
-import SkipToContent from "./SkipToContent.astro";
-import SidebarToggle from "./SidebarToggle";
+import { SITE } from '../../consts';
+import AstroLogo from './AstroLogo.astro';
+import SkipToContent from './SkipToContent.astro';
+import SidebarToggle from './SidebarToggle';
+
+type Props = {
+	currentPage: string;
+};
 
 ---
 
@@ -15,7 +19,7 @@ import SidebarToggle from "./SidebarToggle";
 		<div class="logo flex">
 			<a href="/">
 				<AstroLogo size={40} />
-				<h1>{CONFIG.SITE.title ?? "Documentation"}</h1>
+				<h1>{SITE.title ?? "Documentation"}</h1>
 			</a>
 		</div>
 		<div style="flex-grow: 1;"></div>

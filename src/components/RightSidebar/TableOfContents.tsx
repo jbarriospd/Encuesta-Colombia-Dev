@@ -1,6 +1,6 @@
-import { unescape } from 'html-escaper';
 import type { MarkdownHeading } from 'astro';
 import type { FunctionalComponent } from 'preact';
+import { unescape } from 'html-escaper';
 import { useState, useEffect, useRef } from 'preact/hooks';
 
 type ItemOffsets = {
@@ -11,7 +11,7 @@ type ItemOffsets = {
 const TableOfContents: FunctionalComponent<{ headings: MarkdownHeading[] }> = ({
 	headings = [],
 }) => {
-	const toc = useRef<HTMLUListElement | null>(null);
+	const toc = useRef<HTMLUListElement>();
 	const onThisPageID = 'on-this-page-heading';
 	const itemOffsets = useRef<ItemOffsets[]>([]);
 	const [currentID, setCurrentID] = useState('overview');
@@ -62,23 +62,23 @@ const TableOfContents: FunctionalComponent<{ headings: MarkdownHeading[] }> = ({
 		return () => headingsObserver.disconnect();
 	}, [toc.current]);
 
-	const onLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-		setCurrentID((e.target as any).getAttribute('href').replace('#', ''));
+	const onLinkClick = (e) => {
+		setCurrentID(e.target.getAttribute('href').replace('#', ''));
 	};
 
 	return (
 		<>
-		
 			<h2 id={onThisPageID} className="heading">
-				En esta página
+				On this page
 			</h2>
 			<ul ref={toc}>
 				{headings
 					.filter(({ depth }) => depth > 1 && depth < 4)
 					.map((heading) => (
 						<li
-							className={`header-link border-l-4 border-sky-500 depth-${heading.depth} ${currentID === heading.slug ? 'bg-sky-700' : ''
-								}`.trim()}
+							className={`header-link depth-${heading.depth} ${
+								currentID === heading.slug ? 'current-header-link' : ''
+							}`.trim()}
 						>
 							<a href={`#${heading.slug}`} onClick={onLinkClick}>
 								{unescape(heading.text)}

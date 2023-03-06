@@ -25,8 +25,9 @@ const MenuToggle: FunctionalComponent = () => {
 				xmlns="http://www.w3.org/2000/svg"
 				width="1em"
 				height="1em"
+				fill="none"
 				viewBox="0 0 24 24"
-				class="stroke-white"
+				stroke="currentColor"
 			>
 				<path
 					stroke-linecap="round"

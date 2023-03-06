@@ -3,10 +3,10 @@ import preact from '@astrojs/preact';
 import react from '@astrojs/react';
 
 // https://astro.build/config
-import tailwind from "@astrojs/tailwind";
+import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
-import mdx from "@astrojs/mdx";
+import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,6 +14,6 @@ export default defineConfig({
   // Enable Preact to support Preact JSX components.
   preact(),
   // Enable React for the Algolia search component.
-  react(), tailwind(), mdx()],
-  site: `https://encuesta-colombia-dev.vercel.app`
+  react(), mdx(), tailwind()],
+  site: `https://astro.build`
 });
