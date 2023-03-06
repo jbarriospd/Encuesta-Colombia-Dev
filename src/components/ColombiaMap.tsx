@@ -64,7 +64,7 @@ const ColombiaMap = () => {
         <>
             <div>
                 <svg width={400} height={500} viewBox="0 0 400 500">
-                    <g className='COL_adm1' id="toolitpMap">
+                    <g className='COL_adm1' data-tooltip-id="toolitpMap">
                         {geoFile.map((d, i) => {
                             const hasTotal = d.properties.total ? true : false
                             const fillColor = hasTotal === true ? 'fill-yellow-900' : 'fill-yellow-700'
@@ -83,7 +83,7 @@ const ColombiaMap = () => {
                         })}
                     </g>
                 </svg>
-                {hasMounted && <Tooltip anchorId='toolitpMap' place='right' float>{content}</Tooltip>}
+                {hasMounted && <Tooltip id='toolitpMap' float>{content}</Tooltip>}
             </div>
         </>
     )
