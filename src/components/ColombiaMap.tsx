@@ -83,7 +83,7 @@ const ColombiaMap = () => {
                         })}
                     </g>
                 </svg>
-                {hasMounted && <Tooltip id='toolitpMap' float>{content}</Tooltip>}
+                {hasMounted && <Tooltip id='toolitpMap' place="right" float>{content}</Tooltip>}
             </div>
         </>
     )
