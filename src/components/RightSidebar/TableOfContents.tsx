@@ -69,15 +69,15 @@ const TableOfContents: FunctionalComponent<{ headings: MarkdownHeading[] }> = ({
 	return (
 		<>
 			<h2 id={onThisPageID} className="heading">
-				On this page
+			En esta página
 			</h2>
 			<ul ref={toc}>
 				{headings
 					.filter(({ depth }) => depth > 1 && depth < 4)
 					.map((heading) => (
 						<li
-							className={`header-link depth-${heading.depth} ${
-								currentID === heading.slug ? 'current-header-link' : ''
+							className={`header-link  border-l-4 border-sky-500 depth-${heading.depth} ${
+								currentID === heading.slug ? 'bg-sky-700' : ''
 							}`.trim()}
 						>
 							<a href={`#${heading.slug}`} onClick={onLinkClick}>

@@ -17,13 +17,13 @@ const currentPageMatch = currentPage.endsWith('/')
 			Object.entries(SIDEBAR).map(([header, children]) => (
 				<li>
 					<div class="nav-group">
-						<h2 class="text-3xl">{header}</h2>
+						<h2 class="text-2xl">{header}</h2>
 						<ul>
 							{children.map((child) => {
 								const url = Astro.site?.pathname + child.link;
 								return (
 									<li class="nav-link">
-										<a class="aria-[current='page']:bg-sky-700 aria-[current='page']:font-semibold"
+										<a class="aria-[current='page']:bg-sky-700 aria-[current='page']:font-semibold hover:bg-slate-600"
 											href={url}
 											aria-current={
 												currentPageMatch === child.link
@@ -91,15 +91,6 @@ const currentPageMatch = currentPage.endsWith('/')
 		text-decoration: none;
 		display: block;
 	}
-	.nav-link a:hover,
-	.nav-link a:focus {
-		background-color: var(--theme-bg-hover);
-	}
-	/* .nav-link a[aria-current="page"] {
-		color: var(--theme-text-accent);
-		background-color: var(--theme-bg-accent);
-		font-weight: 600;
-	} */
 	@media (min-width: 50em) {
 		.nav-groups {
 			padding: 0;
