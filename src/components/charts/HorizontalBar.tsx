@@ -23,10 +23,9 @@ ChartJS.register(
 
 
 export const HorizontalBar = (props: any) => {
-    const { data } = props;
+    const { data, height } = props;
 
     const options = {
-        maintainAspectRatio: false,
         indexAxis: 'y' as const,
         plugins: {
             legend: { display: false },
@@ -40,7 +39,7 @@ export const HorizontalBar = (props: any) => {
 
     return (
         <div>
-            <Bar height={350} data={data} options={options} />
+            <Bar height={height} data={data} options={options} />
         </div>
     );
 };

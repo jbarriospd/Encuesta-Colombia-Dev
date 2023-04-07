@@ -11,12 +11,13 @@ import {
   objectCompany,
   fundCompany,
   rolDeveloperAct,
-  rolDeveloperBefore
+  rolDeveloperBefore,
 } from "../../utils/Data";
 
 ## ¿Para qué tipo de empresa trabaja?
 
 Se considera como empresa colombiana a las empresas que fueron constituidas en Colombia primero, o que los fundadores son de Colombia. Las empresas con sede en Colombia, pero nacidas en otro país no cuentan como empresas colombianas.
+
 <div class="overflow-x-scroll">
   <div class="w-[690px] md:w-full">
     <VerticalBarChart client:load="react" data={typeCompany} />
@@ -25,8 +26,14 @@ Se considera como empresa colombiana a las empresas que fueron constituidas en C
 
 ## La empresa para la que usted trabaja se dedica principalmente a:
 
-<VerticalBarChart client:load="react" data={objectCompany} />
+Los servicions habilitados por tecnología se refieren a empresas como domicilios.com, Uber, Tappsi, Bunny inc, Etsy, e-commerce.
+Los Servicio o producto de tecnología se refiere a empresas como Dropbox, GitHub, Stripe, Heroku o hardware
 
+<div class="overflow-x-scroll">
+  <div class="w-[690px] md:w-full">
+    <VerticalBarChart client:load="react" data={objectCompany} />
+  </div>
+</div>
 ## ¿Cuántos años de fundada tiene la empresa para la que trabaja?
 
 <VerticalBarChart client:load="react" data={fundCompany} />
@@ -41,4 +48,4 @@ Se considera como empresa colombiana a las empresas que fueron constituidas en C
 
 ¿Por ejemplo que escribió usted en LinkedIn? Software Engineer, Frontend Engineer.
 
-<HorizontalBar client:load="react" data={rolDeveloperBefore} /> 
+<HorizontalBar client:load="react" data={rolDeveloperBefore} />{" "}

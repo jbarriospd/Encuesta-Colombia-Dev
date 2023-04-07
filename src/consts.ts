@@ -26,8 +26,8 @@ export const SIDEBAR: Sidebar = {
 		{ text: 'Page 3', link: 'page-3' },
 	],
 	'Developer Profile': [
-		{ text: 'Demografia', link: 'demografia' },
-		{ text: 'Tecnologias', link: 'tecnologias' },
+		{ text: 'Demografía', link: 'demografia' },
+		{ text: 'Tecnologías', link: 'tecnologias' },
 		{ text: 'Entorno de trabajo', link: 'trabajo' }
 	],
 

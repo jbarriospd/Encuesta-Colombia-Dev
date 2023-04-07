@@ -106,21 +106,14 @@ export const hoursPerDay = {
 
 export const objectCompany = {
   labels: [
-    ["Consultoría y servicios", "de desarrollo de", "software a la medida"],
+    ["Consultoría", "y servicios", "de desarrollo de", "software a la medida"],
     [
-      "Servicio habilitado por",
-      "tecnología (similar a",
-      "domicilios.com, Uber,",
-      "Tappsi, Bunny inc,",
-      "Etsy, e-commerce)",
+      "Servicio habilitado", "por tecnología"
     ],
-    ["Servicio no tecnológico", "(banca, seguros,", "contabilidad, etc)"],
+    ["Servicio", "no tecnológico",],
     [
       "Servicio o producto",
-      "de tecnología (similar a",
-      "Dropbox, GitHub,",
-      "Stripe, Heroku ",
-      "o hardware)",
+      "de tecnología ",
     ],
     "Otro",
   ],
@@ -168,12 +161,12 @@ export const typeCompany = {
 
 export const fundCompany = {
   labels: [
-    "Menos de 1 año",
+    "< 1 año",
     "1 año",
     "2-5",
     "5-10",
-    "Más de 10",
-    "Soy independiente",
+    "> 10",
+    ["Soy","independiente"],
   ],
   datasets: [
     {
@@ -338,7 +331,7 @@ export const tecnologiesInWork = {
     "Ruby",
     "Kotlin",
     "Go",
-    "Ninguno, porque soy mánager 😭",
+    "Ninguno, soy mánager 😭",
     "Swift",
     "SQL",
     "Dart",
