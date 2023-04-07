@@ -66,7 +66,7 @@ export const perksCompany = {
   ],
   datasets: [
     {
-      label: "respuestas",
+      label: "Respuestas",
       data: [655, 619, 551, 451, 363, 348, 242, 229, 202, 196, 105, 74],
       backgroundColor: [
         "rgba(255, 99, 132)",
@@ -119,7 +119,7 @@ export const objectCompany = {
   ],
   datasets: [
     {
-      label: "respuestas",
+      label: "Respuestas",
       data: [934, 277, 240, 230, 103],
       backgroundColor: [
         "rgb(75, 192, 192)"
@@ -148,7 +148,7 @@ export const typeCompany = {
   ],
   datasets: [
     {
-      label: "respuestas",
+      label: "Respuestas",
       data: [690, 358, 235, 234, 190, 52, 25],
       backgroundColor: [
         "rgb(75, 192, 192)"
@@ -170,7 +170,7 @@ export const fundCompany = {
   ],
   datasets: [
     {
-      label: "respuestas",
+      label: "Respuestas",
       data: [28, 56, 397, 376, 910, 17],
       backgroundColor: "rgb(75, 192, 192)",
       borderColor: "rgba(255, 255, 255)",
@@ -203,7 +203,7 @@ export const rolDeveloperAct = {
   ],
   datasets: [
     {
-      label: "respuestas",
+      label: "Respuestas",
       data: [
         228, 226, 223, 195, 90, 78, 51, 49, 40, 37, 36, 35, 28, 25, 11, 3, 3, 1,
       ],
@@ -261,7 +261,7 @@ export const seniority = {
   ],
   datasets: [
     {
-      label: "respuestas",
+      label: "Respuestas",
       data: [568, 553, 216, 10, 9],
     },
   ],
@@ -271,7 +271,7 @@ export const isFounder = {
   labels: ["No", "Si"],
   datasets: [
     {
-      label: "respuestas",
+      label: "Respuestas",
       data: [1289, 70],
     },
   ],
@@ -289,7 +289,7 @@ export const timeCurrentlyWork = {
   ],
   datasets: [
     {
-      label: "respuestas",
+      label: "Respuestas",
       data: [544, 240, 29, 224, 203, 113, 6],
       backgroundColor: "rgba(255, 99, 132, 0.2)",
       borderColor: "rgba(255, 99, 132, 1)",
@@ -310,7 +310,7 @@ export const yearsOfExperience = {
   ],
   datasets: [
     {
-      label: "respuestas",
+      label: "Respuestas",
       data: [98, 126, 175, 147, 373, 391, 49],
       backgroundColor: "rgba(255, 99, 132, 0.2)",
       borderColor: "rgba(255, 99, 132, 1)",
@@ -499,7 +499,7 @@ export const dbTecnologiesInWork = {
   ],
   datasets: [
     {
-      label: "My First Dataset",
+      label: "Respuestas",
       data: [372, 277, 143, 94, 76, 43, 41, 20, 10, 6, 5, 4, 3, 3, 3],
       backgroundColor: [
         "rgb(255, 99, 132)",

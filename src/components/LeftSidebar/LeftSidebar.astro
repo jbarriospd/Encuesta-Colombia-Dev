@@ -17,7 +17,7 @@ const currentPageMatch = currentPage.endsWith('/')
 			Object.entries(SIDEBAR).map(([header, children]) => (
 				<li>
 					<div class="nav-group">
-						<h2 class="text-2xl">{header}</h2>
+						<h2 class="text-2xl px-2">{header}</h2>
 						<ul>
 							{children.map((child) => {
 								const url = Astro.site?.pathname + child.link;
@@ -60,7 +60,6 @@ const currentPageMatch = currentPage.endsWith('/')
 	}
 	.nav-groups {
 		height: 100%;
-		padding: 2rem 0;
 		overflow-x: visible;
 		overflow-y: auto;
 		max-height: 100vh;
