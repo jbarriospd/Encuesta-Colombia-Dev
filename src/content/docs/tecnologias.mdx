@@ -5,7 +5,7 @@ description: Lenhuages y tencologias en Colombia
 
 import Tabs from "../../components/Tabs";
 import HorizontalBar from "../../components/charts/HorizontalBar";
-import StackedBarChart from "../../components/charts/StackedBarChart";
+import VerticalBarChart from "../../components/charts/VerticalBarChart";
 
 import {
   tecnologiesInWork,
@@ -16,7 +16,11 @@ import {
 
 ## Tecnologias para el trabajo
 
-<HorizontalBar client:load="react" data={tecnologiesInWork} />
+<div class="overflow-x-scroll md:overflow-hidden">
+  <div class="w-[690px] md:w-full">
+    <VerticalBarChart client:load="react" data={tecnologiesInWork} />
+  </div>
+</div>
 
 <Tabs client:visible sharedStore="ui-frameworks">
   <Fragment slot="tab.frontend">Frontend</Fragment>
@@ -37,7 +41,7 @@ import {
 
 	<Fragment slot="panel.db">
     <slot name="db">
-      <HorizontalBar client:load="react" data={dbTecnologiesInWork} height={250}/>
+      <HorizontalBar client:load="react" data={dbTecnologiesInWork} height={300}/>
     </slot>
   </Fragment>
 </Tabs>

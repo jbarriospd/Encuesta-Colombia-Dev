@@ -18,7 +18,7 @@ import {
 
 Se considera como empresa colombiana a las empresas que fueron constituidas en Colombia primero, o que los fundadores son de Colombia. Las empresas con sede en Colombia, pero nacidas en otro país no cuentan como empresas colombianas.
 
-<div class="overflow-x-scroll">
+<div class="overflow-x-scroll md:overflow-hidden">
   <div class="w-[690px] md:w-full">
     <VerticalBarChart client:load="react" data={typeCompany} />
   </div>
@@ -26,10 +26,10 @@ Se considera como empresa colombiana a las empresas que fueron constituidas en C
 
 ## La empresa para la que usted trabaja se dedica principalmente a:
 
-Los servicions habilitados por tecnología se refieren a empresas como domicilios.com, Uber, Tappsi, Bunny inc, Etsy, e-commerce.
-Los Servicio o producto de tecnología se refiere a empresas como Dropbox, GitHub, Stripe, Heroku o hardware
+Los servicios habilitados por tecnología se refieren a empresas como domicilios.com, Uber, Tappsi, Bunny inc, Etsy, e-commerce.
+Los servicios o producto de tecnología se refiere a empresas como Dropbox, GitHub, Stripe, Heroku o hardware
 
-<div class="overflow-x-scroll">
+<div class="overflow-x-scroll md:overflow-hidden">
   <div class="w-[690px] md:w-full">
     <VerticalBarChart client:load="react" data={objectCompany} />
   </div>
@@ -42,10 +42,10 @@ Los Servicio o producto de tecnología se refiere a empresas como Dropbox, GitHu
 
 ¿Por ejemplo que escribe usted en LinkedIn? Software Engineer, Frontend Engineer.
 
-<HorizontalBar client:load="react" data={rolDeveloperAct} />
+<HorizontalBar client:load="react" data={rolDeveloperAct} height={350}/>
 
 ## ¿Cuál fue su título en la anterior empresa en la que trabajó?
 
 ¿Por ejemplo que escribió usted en LinkedIn? Software Engineer, Frontend Engineer.
 
-<HorizontalBar client:load="react" data={rolDeveloperBefore} />{" "}
+<HorizontalBar client:load="react" data={rolDeveloperBefore} height={350}/>
