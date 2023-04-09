@@ -14,13 +14,15 @@ import {
   dbTecnologiesInWork,
 } from "../../utils/Data";
 
-## Tecnologias para el trabajo
+## Overview
 
 <div class="overflow-x-scroll md:overflow-hidden">
   <div class="w-[690px] md:w-full">
     <VerticalBarChart client:load="react" data={tecnologiesInWork} />
   </div>
 </div>
+
+## Tecnologías por especialidad
 
 <Tabs client:visible sharedStore="ui-frameworks">
   <Fragment slot="tab.frontend">Frontend</Fragment>
