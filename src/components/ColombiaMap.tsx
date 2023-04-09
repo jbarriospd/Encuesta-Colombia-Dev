@@ -4,7 +4,6 @@ import { geoPath, geoMercator } from 'd3-geo'
 import { Tooltip } from 'react-tooltip'
 import 'react-tooltip/dist/react-tooltip.css';
 
-import useHasMounted from '../hooks/useHasMounted'
 import reportFound from '../utils/colombia-data.json'
 
 const projection = () =>
@@ -16,7 +15,6 @@ const projection = () =>
 const ColombiaMap = () => {
     const [geoFile, setGeoFile] = useState([])
     const [content, setContent] = useState('')
-    const hasMounted = useHasMounted()
     
     useEffect(() => {
 
@@ -29,8 +27,8 @@ const ColombiaMap = () => {
             }
 
             response.json().then((response) => {
-                const spainFeatures = feature(response, response.objects["colombia.geo"]).features
-                const object = [...spainFeatures]
+                const colombiaFeatures = feature(response, response.objects["colombia.geo"]).features
+                const object = [...colombiaFeatures]
                 const values = [...reportFound]
 
                 object.forEach((element) => {
@@ -83,7 +81,7 @@ const ColombiaMap = () => {
                         })}
                     </g>
                 </svg>
-                {hasMounted && <Tooltip id='toolitpMap' place="right" float>{content}</Tooltip>}
+                <Tooltip id='toolitpMap' place="right" float>{content}</Tooltip>
             </div>
         </>
     )

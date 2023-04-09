@@ -20,15 +20,14 @@ export type Sidebar = Record<string, { text: string; link: string }[]>;
 
 export const SIDEBAR: Sidebar = {
 
-	'Introducción': [
-		{ text: 'Introducción', link: 'introduction' },
-		{ text: 'Page 2', link: 'page-2' },
-		{ text: 'Page 3', link: 'page-3' },
-	],
+	'Introducción': 
+		[{ text: 'Introducción', link: 'introduction' }],
 	'Developer Profile': [
 		{ text: 'Demografía', link: 'demografia' },
 		{ text: 'Tecnologías', link: 'tecnologias' },
-		{ text: 'Entorno de trabajo', link: 'trabajo' }
+		{ text: 'Entorno de trabajo', link: 'trabajo' },
+		{ text: 'Salarios', link: 'salarios' }
+
 	],
 
 

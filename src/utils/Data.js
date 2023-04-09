@@ -49,6 +49,28 @@ export const othersModeOfWork = {
 
 // ¿A usted le pagan en pesos colombianos (COP) o dólares (USD)? COP: 1036; USD: 183
 
+// salarios anteriores vs salarios actuales
+
+export const salaries = {
+  labels: ['< 30', '30-60', '60-90', '90-120',' > 120'],
+  datasets: [
+   {
+    label: 'Salario anterior en milones',
+    data: [517,218,140,51,50],
+    backgroundColor: 'rgba(255, 99, 132, 0.5)',
+    borderColor: 'rgb(255, 99, 132)',
+
+   },
+   {
+    label: 'Salario actual en milones',
+    data: [240,254,227,131,184],
+    borderColor: 'rgb(53, 162, 235)',
+    backgroundColor: 'rgba(53, 162, 235, 0.5)',
+   } 
+  ]
+  
+}
+
 export const perksCompany = {
   labels: [
     "Hardware (computador, celular, etc)",
